@@ -17,5 +17,6 @@ public class App {
 
 		cxRS1.leerURL("https://www.youtube.com/subscription_center?add_user=mitocode");
 	}
-
 }
+
+//https://www.tutorialspoint.com/design_pattern/abstract_factory_pattern.htm
