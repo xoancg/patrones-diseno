@@ -7,8 +7,9 @@ import com.mitocode.inter.impl.ConexionPostgreSQL;
 import com.mitocode.inter.impl.ConexionSQLServer;
 import com.mitocode.inter.impl.ConexionVacia;
 
+// Esta clase es la fábrica
 public class ConexionFabrica {
-
+	// Método público que devuelve la interfaz Conexion de lo que pida el usuario
 	public IConexion getConexion(String motor) {
 		if (motor == null) {
 			return new ConexionVacia();

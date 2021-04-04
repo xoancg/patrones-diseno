@@ -9,23 +9,24 @@ public class ConexionMySQL implements IConexion {
 	private String usuario;
 	private String contrasena;
 
+	// Parámetros de conexión a la BD
 	public ConexionMySQL() {
 		this.host = "localhost";
 		this.puerto = "3306";
 		this.usuario = "root";
 		this.contrasena = "123";
 	}
-
+	// Sobreescribimos los métodos implementados en función de las necesidades de esta clase
 	@Override
 	public void conectar() {
-		// Aqui puede ir c�digo JDBC
-		System.out.println("Se conect� a MySQL");
+		// Aqui puede ir código JDBC
+		System.out.println("Se conectó a MySQL");
 
 	}
 
 	@Override
 	public void desconectar() {
-		System.out.println("Se desconect� de MySQL");
+		System.out.println("Se desconectó de MySQL");
 	}
 
 	@Override

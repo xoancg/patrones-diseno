@@ -9,6 +9,7 @@ public class ConexionOracle implements IConexion {
 	private String usuario;
 	private String contrasena;
 
+	// Parámetros de conexión a la BD
 	public ConexionOracle() {
 		this.host = "localhost";
 		this.puerto = "1521";
@@ -16,16 +17,17 @@ public class ConexionOracle implements IConexion {
 		this.contrasena = "123";
 	}
 
+	// Sobreescribimos los métodos implementados en función de las necesidades de esta clase
 	@Override
 	public void conectar() {
-		// Aqui puede ir c�digo JDBC
-		System.out.println("Se conect� a Oracle");
+		// Aqui puede ir c�digo JDBC
+		System.out.println("Se conectó a Oracle");
 
 	}
 
 	@Override
 	public void desconectar() {
-		System.out.println("Se desconect� de Oracle");
+		System.out.println("Se desconectó de Oracle");
 	}
 
 	@Override

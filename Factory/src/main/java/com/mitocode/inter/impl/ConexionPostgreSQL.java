@@ -16,16 +16,17 @@ public class ConexionPostgreSQL implements IConexion {
 		this.contrasena = "123";
 	}
 
+	// Sobreescribimos los mÃ©todos implementados en funciÃ³n de las necesidades de esta clase
 	@Override
 	public void conectar() {
-		// Aqui puede ir código JDBC
-		System.out.println("Se conectó a PostgreSQL");
+		// Aqui puede ir cï¿½digo JDBC
+		System.out.println("Se conectÃ³ a PostgreSQL");
 
 	}
 
 	@Override
 	public void desconectar() {
-		System.out.println("Se desconectó de PostgreSQL");
+		System.out.println("Se desconectÃ³ de PostgreSQL");
 	}
 
 	@Override

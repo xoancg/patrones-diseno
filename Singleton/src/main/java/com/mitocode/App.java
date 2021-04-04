@@ -19,3 +19,4 @@ public class App {
 	//Otro ejemplo en: https://www.youtube.com/watch?v=qiFeiYLzIH8
 	//Spring Framework gestiona sus beans como Singleton por defecto
 }
+//https://www.tutorialspoint.com/design_pattern/singleton_pattern.htm

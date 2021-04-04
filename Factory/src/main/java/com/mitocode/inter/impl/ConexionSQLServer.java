@@ -16,16 +16,17 @@ public class ConexionSQLServer implements IConexion {
 		this.contrasena = "123";
 	}
 
+	// Sobreescribimos los mÃ©todos implementados en funciÃ³n de las necesidades de esta clase
 	@Override
 	public void conectar() {
-		// Aqui puede ir código JDBC
-		System.out.println("Se conectó a SQLServer");
+		// Aqui puede ir cï¿½digo JDBC
+		System.out.println("Se conectÃ³ a SQLServer");
 
 	}
 
 	@Override
 	public void desconectar() {
-		System.out.println("Se desconectó de SQLServer");
+		System.out.println("Se desconectÃ³ de SQLServer");
 	}
 
 	public String getHost() {
