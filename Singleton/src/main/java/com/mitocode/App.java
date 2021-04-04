@@ -5,14 +5,15 @@ import com.mitocode.model.Conexion;
 public class App {
 
 	public static void main(String[] args) {
-		//InstanciaciÛn por constructor prohÌbido por ser "private"
+		//Instanciaci√≥n por constructor proh√≠bido por ser "private"
 		//Conexion c = new Conexion();
 		Conexion c = Conexion.getInstancia();
 		c.conectar();
 		c.desconectar();
-		
-		boolean rpta = c instanceof Conexion;
-		System.out.println(rpta);
+
+		// Control para ver que lo que se est√° retornando es un objeto de la clase Conexion (true en caso afirmativo)
+		boolean ctrlInstanceOf = c instanceof Conexion;
+		System.out.println(ctrlInstanceOf);
 	}
 	
 	//Otro ejemplo en: https://www.youtube.com/watch?v=qiFeiYLzIH8

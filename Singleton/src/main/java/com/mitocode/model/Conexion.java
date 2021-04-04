@@ -2,32 +2,34 @@ package com.mitocode.model;
 
 public class Conexion {
 	
-	//Declaración
+	//DeclaraciÃ³n
 	private static Conexion instancia;
 	//private static Conexion instancia = new Conexion();
 	
-	//Para evitar instancia mediante operador "new"
+	//Private para evitar instancia mediante operador "new"
 	private Conexion() {
 		
 	}
 	
 	//Para obtener la instancia unicamente por este metodo
 	//Notese la palabra reservada "static" hace posible el acceso mediante Clase.metodo
-	public static Conexion getInstancia() {
+	public static Conexion getInstancia() { // MÃ©todo de clase
+		// Si no existe la instancia, la crea
 		if(instancia == null) {
 			instancia = new Conexion();
 		}
+		// Devuelve la instancia existente o, en su defecto, la que acabamos de crear
 		return instancia;
 	}
 	
-	//Método de prueba
+	//MÃ©todo de prueba
 	public void conectar() {
-		System.out.println("Me conecté a la BD");
+		System.out.println("Me conectÃ© a la BD");
 	}
 	
-	//Método de prueba
+	//MÃ©todo de prueba
 	public void desconectar() {
-		System.out.println("Me desconecté de la BD");
+		System.out.println("Me desconectÃ© de la BD");
 	}
 
 }
