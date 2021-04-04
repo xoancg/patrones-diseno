@@ -14,7 +14,8 @@ public class App {
 		IConexion cx2 = new ConexionPostgre("mitocode", "7482", "192.168.1.1");
 		
 		PersonaDAO dao = new PersonaDAOImpl();
-		dao.setConexion(cx1);
+		// dao.setConexion(cx1);
+		dao.setConexion(cx2);
 		
 		dao.listarTodos();
 		

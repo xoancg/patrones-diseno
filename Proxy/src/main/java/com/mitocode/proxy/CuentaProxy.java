@@ -4,10 +4,12 @@ import java.util.logging.Logger;
 
 import com.mitocode.inter.ICuenta;
 import com.mitocode.inter.impl.CuentaBancoAImpl;
+import com.mitocode.inter.impl.CuentaBancoBImpl;
 import com.mitocode.model.Cuenta;
 
 public class CuentaProxy implements ICuenta {
 
+	// Llamamos a la interfaz en lugar de al objeto final en concreto
 	private ICuenta cuentaReal;
 	private final static Logger LOGGER = Logger.getLogger(CuentaProxy.class.getName());
 

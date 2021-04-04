@@ -13,9 +13,9 @@ public class App {
 		
 		CuentaAHImpl cuentaClonada = (CuentaAHImpl) cuentaAhorro.clonar();
 
-		System.out.println(cuentaAhorro);
-		System.out.println(cuentaAhorro2);
-		System.out.println(cuentaClonada);
+		System.out.println("Cuenta original:" + cuentaAhorro);
+		System.out.println("Nueva cuenta instanciada: " + cuentaAhorro2);
+		System.out.println("Cuenta clonada a partir de la original: " + cuentaClonada);
 		
 		/*if (cuentaClonada != null) {
 			System.out.println(cuentaClonada);

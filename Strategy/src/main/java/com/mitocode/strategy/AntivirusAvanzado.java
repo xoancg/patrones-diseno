@@ -4,7 +4,7 @@ public class AntivirusAvanzado extends AnalisisAvanzado{
 
 	@Override
 	void iniciar() {
-		System.out.println("Antivirus Avanzado - Análisis simple iniciado");
+		System.out.println("Antivirus Avanzado - Anï¿½lisis avanzado iniciado");
 	}
 
 	@Override
@@ -49,7 +49,7 @@ public class AntivirusAvanzado extends AnalisisAvanzado{
 
 	@Override
 	void detener() {
-		System.out.println("Antivirus Avanzado - Análisis simple finalizado");
+		System.out.println("Antivirus Avanzado - Anï¿½lisis avanzado finalizado");
 	}
 
 }

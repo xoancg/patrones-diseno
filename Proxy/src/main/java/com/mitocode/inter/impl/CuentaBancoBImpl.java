@@ -15,7 +15,7 @@ public class CuentaBancoBImpl implements ICuenta {
 
 	@Override
 	public Cuenta depositarDinero(Cuenta cuenta, double monto) {
-		double saldoActual = cuenta.getSaldoInicial() + monto + 0.20;
+		double saldoActual = cuenta.getSaldoInicial() + monto + 0.50;
 		cuenta.setSaldoInicial(saldoActual);
 		System.out.println("Saldo actual: " + cuenta.getSaldoInicial());
 		return cuenta;
